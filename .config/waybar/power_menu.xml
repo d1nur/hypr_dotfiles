@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menu">
+    <item icon="" label="Shutdown">
+      <action name="Execute">
+        <command>systemctl poweroff</command>
+      </action>
+    </item>
+    <item icon=" rā" label="Reboot">
+      <action name="Execute">
+        <command>systemctl reboot</command>
+      </action>
+    </item>
+    <item icon="" label="Suspend">
+      <action name="Execute">
+        <command>systemctl suspend</command>
+      </action>
+    </item>
+    <item icon="" label="Logout">
+      <action name="Execute">
+        <command>loginctl terminate-session $WAYLAND_SESSION</command>
+      </action>
+    </item>
+  </menu>
+</interface>
